@@ -1,0 +1,214 @@
+
+      form {
+        display: grid;
+        justify-content: center;
+      }
+
+      .display_items {
+        padding: 14px;
+        border: 2px solid #cdc8c8;
+        position: relative;
+        background: white;
+        width: 345px;
+        margin-bottom: 20px;
+      }
+
+      .display_items.active {
+        border: 2px solid #ff6b82 !important;
+      }
+
+      .badge {
+        background-color: #ff6b82;
+        color: white;
+        padding: 4px 8px;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        right: 6px;
+        padding: 6px;
+        font-size: 20px;
+        font-weight: 600;
+        top: -13px;
+      }
+
+      .badge:after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        transform: skewY(43deg);
+        right: -8px;
+        width: 8px;
+        height: 8px;
+        background-color: #cc596b;
+        z-index: -1;
+      }
+
+      .badge:before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        transform: skewY(-43deg);
+        left: -8px;
+        width: 8px;
+        height: 8px;
+        background-color: #cc596b;
+        z-index: -1;
+      }
+
+      .title {
+        display: flex;
+      }
+
+      .title h3 {
+        margin: 0 0 0 12px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .title p {
+        font-size: 12px;
+        margin: 0 0 0 12px;
+        background: #ff6b82;
+        padding: 1px 6px;
+        color: white;
+      }
+
+      .display_items span {
+        font-size: 12px;
+        margin: 0 0 0 36px;
+      }
+
+      .dynamic-table {
+        margin: 0 0 0 36px;
+      }
+
+      .display_items input {
+        height: 14px;
+        width: 14px;
+      }
+
+      .display_items input:checked ~ input {
+        background-color: #ff6b82 !important;
+      }
+
+      .dynamic-size {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .dynamic-size.active {
+        height: 250px;
+      }
+
+      .title_price p {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .title_price .price_strick {
+        margin: 0;
+        font-size: 10px;
+        text-decoration: line-through;
+        color: #cdc8c8;
+      }
+
+      td select {
+        font-size: 10px;
+        padding: 8px;
+        margin: 0px 8px 0 0px;
+        font-weight: 400;
+      }
+
+      tr td {
+        font-weight: 400;
+        font-size: 10px;
+      }
+
+      tr th {
+        text-align: left;
+        font-size: 10px;
+        margin-bottom: 6px;
+        font-weight: 400;
+      }
+      .dynamic-table {
+        display: none;
+        margin-top: 10px;
+      }
+
+      .display_items {
+        border: 2px solid transparent;
+        padding: 14px;
+        border: 2px solid #c8c8c8;
+      }
+
+      .display_items.active {
+        background: #fff9fa;
+        border-color: #ff6b82;
+      }
+
+      .line-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0;
+      }
+      .line-text {
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 0 30px;
+        color: #ff6b82;
+      }
+
+      .line-text::before,
+      .line-text::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 98px;
+        height: 2px;
+        background-color: #c8c8c8;
+      }
+      .line-text::before {
+        left: -90px;
+      }
+
+      .line-text::after {
+        right: -90px;
+      }
+
+      .free_del {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .delivery {
+        font-size: 14px;
+        font-weight: 500;
+        color: #ff6b82;
+      }
+      .total {
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #ff6b82;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+        width: 100%;
+        font-weight: 500;
+      }
+
+      button:hover {
+        background-color: #d45c6e;
+      }
